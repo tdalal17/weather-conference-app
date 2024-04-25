@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Conferences from './pages/Conferences';
 import Weather from './pages/Weather';
 import ConferenceDetails from './components/ConferenceDetails';
-
+import Login from './components/Login';
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
           <Route exact path="/conferences" element={<Conferences />} />
           <Route path="/conferences/:id" element={<ConferenceDetails />} />
           <Route path="/weather" element={<Weather />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
