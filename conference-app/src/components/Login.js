@@ -8,12 +8,12 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const token = await login(email, "password");
+      const token = await login(email, "Tanay12345@");
       setToken(token);
     } catch (error) {
       console.error('Error logging in:', error);
     }
-  };
+  }
 
 
   return (
