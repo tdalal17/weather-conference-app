@@ -11,12 +11,12 @@ const port = 3000;
 
 app.use(cors());
 app.use(express.json());
+
+app.use('/', indexRoutes);
 app.use('/conferences', conferenceRoutes);
 app.use('/weather', weatherRoutes);
 app.use('/auth', authRoutes);
-app.use('/indexRoutes', indexRoutes);
-app.use('/conferences', conferenceRoutes);
-app.use('/weather', weatherRoutes);
+
 
 
 app.listen(port, async () => {
