@@ -20,6 +20,11 @@
     "typeorm": "^0.3.20",
     "ts-node": "^10.8.0"
   },
+
+  "engines": {
+    "node": "16.x"
+  },
+
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
