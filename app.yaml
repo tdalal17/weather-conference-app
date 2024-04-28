@@ -12,6 +12,3 @@ resources:
 
 env_variables:
   NODE_ENV: production
-
-deployment:
-  timeout: 1200s
