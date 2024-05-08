@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "deploy": "npm run build && gcloud app deploy"
+    "deploy": "npm run build && gcloud app deploy",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
