@@ -5,6 +5,7 @@ import conferenceRoutes from './conferenceRoutes';
 import weatherRoutes from './weatherRoutes';
 import authRoutes from './authRoutes';
 import indexRoutes from './indexRoutes';
+import 'reflect-metadata';
 
 const app = express();
 const port = 8080;

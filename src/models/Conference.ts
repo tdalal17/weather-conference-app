@@ -1,23 +1,24 @@
-
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { Author } from './Author';
 import { Topic } from './Topic';
+import 'reflect-metadata';
+
 
 @Entity()
 export class Conference {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn({ })
   id!: number;
 
-  @Column()
+  @Column({ })
   name!: string;
 
-  @Column()
+  @Column({ })
   location!: string;
 
-  @Column()
+  @Column({ })
   startDate!: Date;
 
-  @Column()
+  @Column({ })
   endDate!: Date;
 
   @ManyToOne(() => Author)

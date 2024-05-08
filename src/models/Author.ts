@@ -7,7 +7,7 @@ export class Author {
   @PrimaryGeneratedColumn()
   id!: number;
 
-  @Column()
+  @Column({ type: 'varchar' })
   name!: string;
 
   @OneToMany(() => Conference, (conference) => conference.author)

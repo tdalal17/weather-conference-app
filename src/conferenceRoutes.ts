@@ -2,6 +2,7 @@ import express from 'express';
 import { Conference } from './models/Conference';
 import { AppDataSource } from './data-source';
 
+
 const router = express.Router();
 
 // GET all conferences
